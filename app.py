@@ -1,16 +1,3 @@
-st.set_page_config(
-    page_title="Tissue Regeneration & Genetic Factor Navigator",
-    page_icon="🧬",
-    layout="wide"
-)
-
-st.markdown("""
-    <style>
-    #MainMenu {visibility: hidden;}
-    header {visibility: hidden;}
-    footer {visibility: hidden;}
-    </style>
-""", unsafe_allow_html=True)
 import streamlit as st
 import pandas as pd
 import os
@@ -29,6 +16,14 @@ st.set_page_config(
     page_icon="🧬",
     layout="wide"
 )
+
+st.markdown("""
+    <style>
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
 
 # App Header
 st.title("🧬 Tissue Regeneration & Genetic Factor Navigator")
@@ -145,15 +140,14 @@ elif app_mode == "Genetic Factor & Pathway Lookup":
 # --- MODULE 3: LITERATURE RAG EXPLORER ---
 elif app_mode == "Literature RAG Explorer":
     st.subheader("📖 Biomedical Literature & Research Assistant")
-    query = st.text_input("Ask a research question:", "How do growth factors like PDGF-BB and FGF-2 stimulate fibroblast migration and proliferation in the wound cascade?")
+    query = st.text_input("Ask a research question:", "How do extracellular matrix mechanics and substrate stiffness influence macrophage polarization and inflammatory responses during tissue repair?")
     
     if st.button("Search Literature"):
         q_lower = query.lower()
         
-        # Check specific questions carefully
         if "pdgf" in q_lower or "fgf" in q_lower or "fibroblast" in q_lower:
             answer = "PDGF-BB and FGF-2 act synergistically during the proliferation phase: PDGF-BB strongly recruits and stimulates fibroblast migration into the provisional matrix, while FGF-2 drives robust fibroblast proliferation and extracellular matrix protein synthesis to rebuild granulation tissue."
-        elif "stiff" in q_lower or "scaffold" in q_lower or "stem cell" in q_lower:
+        elif "stiff" in q_lower or "scaffold" in q_lower or "stem cell" in q_lower or "mechanics" in q_lower or "macrophage" in q_lower:
             answer = "Matrix stiffness and microarchitecture act as vital mechanical cues: soft substrates (0.1–1 kPa) typically promote neurogenic differentiation, intermediate matrices (8–17 kPa) support myogenic lineage, and rigid surfaces (>34 kPa) drive osteogenic differentiation by enhancing focal adhesion assembly and intracellular tension."
         elif "vegf" in q_lower or "angiogenic" in q_lower or "vessel" in q_lower:
             answer = "Vascular Endothelial Growth Factor (VEGF) binds to VEGFR-2 on endothelial cells, initiating downstream MAPK and PI3K/Akt signaling cascades that stimulate endothelial cell proliferation, migration, and lumen formation for functional tissue vascularization."
