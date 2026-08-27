@@ -1,3 +1,16 @@
+st.set_page_config(
+    page_title="Tissue Regeneration & Genetic Factor Navigator",
+    page_icon="🧬",
+    layout="wide"
+)
+
+st.markdown("""
+    <style>
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
 import streamlit as st
 import pandas as pd
 import os
