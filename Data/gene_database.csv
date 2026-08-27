@@ -1,0 +1,10 @@
+Phase,Gene,Role,Significance
+Hemostasis & Inflammation,PDGF-BB,Recruits neutrophils and macrophages; stimulates fibroblast migration.,High
+Hemostasis & Inflammation,TNF-alpha,Pro-inflammatory cytokine regulating initial immune clearance; dysregulation causes chronic inflammation.,Critical
+Hemostasis & Inflammation,IL-6,Modulates transition from inflammation to the proliferative phase.,Moderate
+Proliferation,VEGF,Primary driver of angiogenesis and new capillary formation in the wound bed.,Critical
+Proliferation,FGF-2 (bFGF),Stimulates keratinocyte and fibroblast proliferation; enhances granulation tissue formation.,High
+Proliferation,COL1A1 / COL3A1,Encodes major structural collagens deposited by active fibroblasts.,High
+Remodeling & Maturation,MMP-1 / MMP-8,Collagenases responsible for breaking down the provisional matrix.,Moderate
+Remodeling & Maturation,TIMP-1,Tissue inhibitor of metalloproteinases; balances ECM degradation and synthesis.,High
+Remodeling & Maturation,TGF-beta3,Favors organized collagen architecture over dense, cross-linked scar tissue.,Critical
